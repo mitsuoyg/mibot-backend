@@ -24,15 +24,15 @@ class TestingConfig(Config):
 
 class DevelopmentConfig(Config):
     # STORAGE_BUCKET = "mibot.appspot.com"
-    DATABASE_NAME = "test"
+    DATABASE_NAME = "mibot-prod"
     MONGODB_HOST = os.environ.get(
-        "MONGODB_HOST", "mongodb+srv://mitsuoyg:Yshara159!@mibot.u1gxy.mongodb.net/test?retryWrites=true&w=majority")
+        "MONGODB_HOST", "mongodb+srv://mitsuoyg:Yshara159@cluster.u1gxy.mongodb.net/mibot-prod?retryWrites=true&w=majority")
 
 
 class ProductionConfig(Config):
     # STORAGE_BUCKET = "mibot.appspot.com"
-    DATABASE_NAME = "test"
-    MONGODB_HOST = "mongodb+srv://mitsuoyg:Yshara159!@mibot.u1gxy.mongodb.net/test?retryWrites=true&w=majority"
+    DATABASE_NAME = "mibot-prod"
+    MONGODB_HOST = "mongodb+srv://mitsuoyg:Yshara159@cluster.u1gxy.mongodb.net/mibot-prod?retryWrites=true&w=majority"
 
 
 envs = {
