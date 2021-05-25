@@ -1,5 +1,5 @@
-from braintutor.app import create_app
-from braintutor.settings import getConfig
+from mibot.app import create_app
+from mibot.settings import getConfig
 
 app = create_app(getConfig())
 

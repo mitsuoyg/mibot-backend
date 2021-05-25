@@ -1,4 +1,4 @@
-from braintutor.user.models import User
+from mibot.user.models import User
 
 
 def jwt_identity(header, payload):

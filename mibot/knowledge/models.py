@@ -1,6 +1,6 @@
 from mongoengine import Document, EmbeddedDocument, ReferenceField, ListField, StringField, EmbeddedDocumentField
 
-from braintutor.agent.route import Agent
+from mibot.agent.route import Agent
 
 from flask import abort
 

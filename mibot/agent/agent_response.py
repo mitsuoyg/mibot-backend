@@ -1,12 +1,12 @@
 from flask import Blueprint, request, abort, jsonify
 from flask_jwt_extended import jwt_required, current_user
 
-from braintutor.knowledge.models import Knowledge
+from mibot.knowledge.models import Knowledge
 
 from .serializer import ResponseRequest
-from braintutor.knowledge.serializer import KnowledgeResponse
+from mibot.knowledge.serializer import KnowledgeResponse
 
-from braintutor.utils.chatbot import Chatbot
+from mibot.utils.chatbot import Chatbot
 
 app = Blueprint('agent-reponse', __name__)
 

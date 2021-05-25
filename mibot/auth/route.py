@@ -1,9 +1,9 @@
 from flask import Blueprint, request, abort
 from flask_jwt_extended import create_access_token, jwt_required, current_user
-from braintutor.extensions import bcrypt
+from mibot.extensions import bcrypt
 from bson.json_util import dumps
 
-from braintutor.user.models import User
+from mibot.user.models import User
 
 app = Blueprint('auth', __name__)
 

@@ -16,21 +16,21 @@ class Config(object):
 
 
 class TestingConfig(Config):
-    # STORAGE_BUCKET = "braintutor-10288.appspot.com"
+    # STORAGE_BUCKET = "mibot.appspot.com"
     DATABASE_NAME = "test"
     MONGODB_HOST = "mongomock://localhost"
     TESTING = True
 
 
 class DevelopmentConfig(Config):
-    # STORAGE_BUCKET = "braintutor-10288.appspot.com"
+    # STORAGE_BUCKET = "mibot.appspot.com"
     DATABASE_NAME = "test"
     MONGODB_HOST = os.environ.get(
         "MONGODB_HOST", "mongodb+srv://mitsuoyg:Yshara159!@mibot.u1gxy.mongodb.net/test?retryWrites=true&w=majority")
 
 
 class ProductionConfig(Config):
-    # STORAGE_BUCKET = "braintutor-10288.appspot.com"
+    # STORAGE_BUCKET = "mibot.appspot.com"
     DATABASE_NAME = "test"
     MONGODB_HOST = "mongodb+srv://mitsuoyg:Yshara159!@mibot.u1gxy.mongodb.net/test?retryWrites=true&w=majority"
 

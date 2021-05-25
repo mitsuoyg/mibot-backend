@@ -1,12 +1,12 @@
 from flask import Flask
-from braintutor.settings import Config
-from braintutor.extensions import jwt, bcrypt, cors, db, storage
-from braintutor.errors import generic_error
+from mibot.settings import Config
+from mibot.extensions import jwt, bcrypt, cors, db, storage
+from mibot.errors import generic_error
 
-from braintutor.auth.route import app as auth
-from braintutor.agent.route import app as agent
-from braintutor.agent.agent_response import app as agent_response
-from braintutor.knowledge.route import app as knowledge
+from mibot.auth.route import app as auth
+from mibot.agent.route import app as agent
+from mibot.agent.agent_response import app as agent_response
+from mibot.knowledge.route import app as knowledge
 
 
 def create_app(config_object=Config):
@@ -25,7 +25,7 @@ def register_extensions(app):
     bcrypt.init_app(app)
     cors.init_app(app)
     db.init_app(app)
-    storage.init_app(app)
+    # storage.init_app(app)
 
 
 def register_blueprints(app):
